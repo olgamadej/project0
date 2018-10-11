@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page!</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+          html, body {
+            margin:0;
+            padding:0;
+            height:100%;
+            min-height:100%;
+          }
+
+            .grid {
+                display: grid;
+                position: relative;
+                padding: 0px;
+                grid-column-gap: 0px;
+                grid-row-gap: 0px;
+                grid-template-columns: auto auto;
+                height:100%;
+                min-height:100%;
+            }
+
+            .grid-item {
+              position: relative;
+                background-color: grey;
+                font-size: 60px;
+                padding: 0px;
+
+            }
+
+
+            #logo {
+              position: absolute;
+              top: 20%;
+              left: 50%;
+              margin-right: -50%;
+              transform: translate(-50%, -50%)
+            }
+
+            p {
+              text-align: center;
+              text-shadow: 5px 5px;
+              font-size: 30px
+            }
+            span {
+            position: absolute;
+              top: 45%;
+              left: 50%;
+              margin-right: -50%;
+              transform: translate(-50%, -50%)
+            }
+            /* menu ma miec position: sticky */
+        </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="grid-item"><span>Art</span></div>
+            <div class="grid-item"><span>Design</span></div>
+            <div id="logo">
+              <img src="napis.png" alt="Ooops... and where did the logo go?">
+              <p>Gallery</p>
+            </div>
+
+        </div>
+
+    </body>
+</html>
